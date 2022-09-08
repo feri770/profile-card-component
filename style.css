@@ -1,0 +1,192 @@
+
+/* HTML Reset  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* ##################### */
+
+
+/* custom font  */
+
+@font-face {
+    font-family: KumbhSans;
+    src: url(./font/KumbhSans-Regular.ttf);
+  }
+
+@font-face {
+    font-family: KumbhSansBold;
+    src: url(./font/KumbhSans-Bold.ttf);
+  }
+
+
+/* ##################### */
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: -75% 350%, 150% -400%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    height:50vh;
+    /* border:1px solid black; */
+}
+
+
+.card-top{
+    background-image: url(./images/bg-pattern-card.svg);
+    height: 35%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+
+.card-bottom{
+    background-color: white;
+    height: 65%;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+
+}
+
+
+/* .profile-picture{
+    background-image: url(./images/image-victor.jpg);
+    height:30%;
+    width:30%;
+    background-repeat: no-repeat;
+} */
+
+.profile-picture img{
+    border-radius: 50%;
+    border: white 5px solid;
+    width: 30%;
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+.information {
+    text-align: center;
+    position: relative;
+    top: 30%;;
+}
+
+.information .name{
+    font-family: KumbhSansBold;
+    color: #2D3248;
+   
+}
+
+.information .city{
+    font-family: KumbhSans;
+    color:hsl(227, 10%, 46%);
+   
+}
+
+.information .age{
+    font-family: KumbhSans;
+    color:hsl(227, 10%, 46%);
+ 
+}
+
+.footer {
+    /* position: absolute; */
+    position: relative;
+    top: 40%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+hr {
+    position: relative;
+    top: 35%;
+    color:hsl(227, 10%, 46%);
+}
+
+.kumbh {
+    font-family: KumbhSans;
+    font-size: 0.70rem;
+
+
+}
+
+.kumbhBold {
+    font-family: KumbhSansBold;
+    font-size: 1.29rem;
+    /* color: HSL(229°, 23%, 23%); */
+    color: #2D3248;
+   
+}
+
+.footer div span {
+    margin: 0;
+    color:hsl(227, 10%, 46%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        /* background-size: 50%; */
+        background-position: 125% 350%, -30% -80%;
+    }
+
+    .container{
+        
+        width:40vh;
+        height:40vh;
+     
+        /* border:1px solid black; */
+    }
+  }
